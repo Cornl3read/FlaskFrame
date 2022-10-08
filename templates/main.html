@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block CSS %}
+    <link rel="stylesheet" type="text/css" href="/static/CSS/base.css">
+{% endblock %}
+{% block body %}
+
+<div class="NAV_CONTAINER">
+    {% include 'nav.html' %}
+</div>
+
+<div class="MAIN_CONTAINER">
+  <h1>This is the main</h1>
+  <h2>Hello {{email}} !</h2>
+    <a class="btn btn-primary" href="/home">HOME</a>
+</div>
+
+{% endblock %}

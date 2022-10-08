@@ -1,0 +1,13 @@
+.NAV_CONTAINER {
+    padding: 10px;
+    text-align: end;
+}
+.MAIN_CONTAINER {
+    margin: 1rem;
+    background-color: cornsilk;
+    color: black;
+    font: 16px "Times New Roman", "Times";
+    text-align: center;
+    border: black 2px solid;
+    padding: .25rem;
+}

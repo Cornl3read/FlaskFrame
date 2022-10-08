@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% include 'nav.html' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+
+    This is the homepage | Hello {{ email }}
+{% endblock %}
+
+
+    {% include 'dashboard/footer.html' %}
