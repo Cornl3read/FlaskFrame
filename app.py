@@ -1,3 +1,4 @@
+import random
 import time
 from datetime import timedelta
 
@@ -26,7 +27,7 @@ def do_db_stuff():
 
 @app.route('/')
 @auth_required()
-def hello_world():  # put application's code her
+def hello_world():
     return render_template('main.html', user=current_user.email.split('@')[0], yellow='brown')
 
 
@@ -40,3 +41,17 @@ def home_dashboard():
 def logout():
     logout_user()
     return redirect('/')
+
+
+@app.route('/8ball')
+@auth_required()
+def eight_ball():
+    answer = ""
+    return render_template('things/8ball.html', answer=answer)
+
+
+@app.route('/8ball_answer')
+def answer_8ball():
+    possible_answers = ['Yes!', 'No!', 'Screw You!', 'EataDik']
+    answer = random.choice(possible_answers)
+    return render_template('things/8ball.html', answer=answer)

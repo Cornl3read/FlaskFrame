@@ -1,0 +1,52 @@
+body {
+    color: #1830af;
+    background-color: #4a5ca8;
+    text-align: center;
+    font-size: 14px;
+}
+
+.JezzyGirl {
+    padding-bottom: 20px;
+}
+
+.login_form {
+    padding: 10px;
+    border: 2px solid #1830af;
+}
+
+.SEC_Menu_p {
+    border: 2px solid #1830af;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.SEC_LNK {
+    color: #071c69;
+    text-effect: none;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    background-color: #537ca2;
+    border: 1px solid  #071c69;
+    border-radius: 15%;
+}
+
+.SEC_LNK:hover {
+    color: #537ca2;
+    background-color: #071c69;
+    border: #071c69;
+}
+
+hr {
+    border-color: #071c69;
+    background-color: #1830af;
+    margin-top: -15px;
+    width: 75%;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.SEC_submit {
+    background-color: #4a5ca8 !important;
+}

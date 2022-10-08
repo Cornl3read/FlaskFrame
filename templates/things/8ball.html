@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block js %}
+    <script type="javascript" src="/static/JS/8ball.js"></script>
+{% endblock %}
+{% block content %}
+<div>
+
+<form>
+    <label for="daball">Ask The 8 Ball</label>
+    <input id="daball" type="text">
+    <a href="/8ball_answer" type="submit" name="sub8ball" class="btn btn-dark">Gib Answer Dern It</a>
+    {% if answer%}
+    <h2>{{ answer }}</h2>
+    {% endif %}
+</form>
+</div>
+{% endblock %}

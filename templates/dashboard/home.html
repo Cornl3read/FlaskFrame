@@ -4,10 +4,13 @@
     {{ title }}
 {% endblock %}
 
-{% block body %}
-
+{% block content %}
     This is the homepage | Hello {{ email }}
+    <br>
+    <a class="btn btn-dark" href="/8ball">8ball</a>
+    <br>
+    {% include 'dashboard/footer.html' %}
 {% endblock %}
 
 
-    {% include 'dashboard/footer.html' %}
+
